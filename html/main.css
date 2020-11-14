@@ -1,0 +1,95 @@
+.container {
+	display: block;
+	position: fixed;
+	left: 70%;
+	top:-30%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
+
+body, html{
+	height: 100%;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+.yrphud{
+	width: 400px;
+	height: 220px;
+	border-radius: 20px;
+	background: rgba(0, 0, 0, 0.7);
+	border: 4mm ridge rgba(224, 135, 18,.8);
+}
+
+.yrphud .line1_and_logo{
+	position: absolute;
+	left: 0;
+	width: 200px;
+}
+
+.yrphud .line1_and_name{
+	position: absolute;
+	right: 0;
+	width: 200px;
+	color: rgba(224, 135, 18);
+	margin: 50px 0;
+}
+
+.icon{
+	width: 75%;
+	margin-bottom: -30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.yrphud .line1_and_name .yrp_name_and_version{
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+	text-shadow: 1px 1px 5px #707070;
+}
+
+.yrphud .line2{
+	width: 100%;
+	position: absolute;
+	bottom: 50px;
+	display: flex;
+	justify-content: center;
+	color: rgba(224, 135, 18);
+}
+
+.yrphud .line2 div{
+	margin: 5px 10px 5px 10px;
+	text-align: center;
+	line-height: 100%;
+	font-size: 0.83em;
+	text-shadow: 1px 1px 5px #707070;
+}
+
+.line2 div span{
+	display: block;
+}
+
+.yrphud .lajna3{
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	display: flex;
+	justify-content: center;
+	color: rgba(224, 135, 18);
+}
+
+.yrphud .lajna3 div{
+	margin: 5px 10px 5px 10px;
+	text-align: center;
+	line-height: 100%;
+	font-size: 0.83em;
+	text-shadow: 1px 1px 5px #707070;
+}
+
+.lajna3 div span{
+	display: block;
+}
+
