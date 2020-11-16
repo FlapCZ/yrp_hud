@@ -1,6 +1,17 @@
+------------------------------------------------------------
+------------------------- yrp_hud --------------------------
+------------------------------------------------------------
+--------------------- Created by Flap ----------------------
+------------------------------------------------------------
+----------------- YourRolePlay Development -----------------
+--------------- Thank you for using this hud ---------------
+----- Regular updates and lots of interesting scripts ------
+--------- discord -> https://discord.gg/hqZEXc8FSE ---------
+------------------------------------------------------------
+
 Config = {}
 
 Config.general_server_settings = {
-	discord_webhook = 'https://discordapp.com/api/webhooks/774651559098843156/0bQmsAEE0WegmPiNY__gSVghN0TaceRnmHotmudKwOYn6bU5QFUMhIESY0Y5mWfkz6Wx',
+	discord_webhook = '', -- Insert a link to the webhook here
 	showBlackMoney = true
 }

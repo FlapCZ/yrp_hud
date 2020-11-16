@@ -1,3 +1,14 @@
+------------------------------------------------------------
+------------------------- yrp_hud --------------------------
+------------------------------------------------------------
+--------------------- Created by Flap ----------------------
+------------------------------------------------------------
+----------------- YourRolePlay Development -----------------
+--------------- Thank you for using this hud ---------------
+----- Regular updates and lots of interesting scripts ------
+--------- discord -> https://discord.gg/hqZEXc8FSE ---------
+------------------------------------------------------------
+
 description 'YourRolePlay Development HUD inspirated by poggu_hud'
 author 'YourRolePlay Development // discord -> https://discord.gg/uSv9sWwhE9'
 version '1.0'
