@@ -1,95 +1,107 @@
 .container {
 	display: block;
 	position: fixed;
-	left: 70%;
-	top:-30%;
+	left: 100%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;600&display=swap');
-
-body, html{
-	height: 100%;
-	margin: 0;
-	font-family: 'Poppins', sans-serif;
-}
-
-.yrphud{
-	width: 400px;
-	height: 220px;
-	border-radius: 20px;
-	background: rgba(0, 0, 0, 0.7);
-	border: 4mm ridge rgba(224, 135, 18,.8);
-}
-
-.yrphud .line1_and_logo{
-	position: absolute;
-	left: 0;
-	width: 200px;
-}
-
-.yrphud .line1_and_name{
-	position: absolute;
-	right: 0;
-	width: 200px;
-	color: rgba(224, 135, 18);
-	margin: 50px 0;
-}
-
-.icon{
-	width: 75%;
-	margin-bottom: -30px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.yrphud .line1_and_name .yrp_name_and_version{
-	font-size: 1em;
-	font-weight: bold;
+.card {
+	display: grid;
+	grid-template-columns: 300px;
+	grid-template-rows: 210px 150px 250px;
+	grid-template-areas: "image" "text" "stats";
+	border-radius: 18px;
+	background: rgb(224, 135, 18,.8);
+	box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+	font-family: roboto;
 	text-align: center;
-	margin: 0;
-	text-shadow: 1px 1px 5px #707070;
-}
+  }
 
-.yrphud .line2{
-	width: 100%;
-	position: absolute;
-	bottom: 50px;
+  .card-image {
+	grid-area: image;
+	background: url(https://cdn.discordapp.com/attachments/750699405073711126/767347203093037069/gta-5-city-lights-4k-xz.jpg);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+  }
+
+  .card-text {
+	grid-area: text;
+	margin: 25px;
+  }
+  .card-text p {
+	color: rgb(0, 0, 0);
+	font-size:15px;
+	font-weight: 300;
+  }
+  .card-text h2 {
+	margin-top:0px;
+	font-size:28px;
+  }
+
+  .barvayes {
+	color: #FFAB00;
+  }
+
+  .barvawhite {
+	color: rgba(255, 245, 245, 0.8);
+  }
+
+  .card-stats-p {
+	color: #ffffff;
+	background: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	font-size: 18px;
+	grid-area: stats; 
+	display: grid;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+  }
+
+  .card-stats {
+	grid-area: stats; 
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background: rgba(0, 0, 0, 0.9);
+	border-left: 0.5rem outset rgb(224, 135, 18,.8);
+	border-top: 0.5rem outset rgb(224, 135, 18,.8);
+	border-right: 0.5rem outset rgb(224, 135, 18,.8);
+  }
+
+  .card-stats .stat {
 	display: flex;
+	align-items: center;
 	justify-content: center;
-	color: rgba(224, 135, 18);
+	flex-direction: column;
+	color: rgb(255, 255, 255,.8);
+	padding:10px;
+  }
+
+i {
+	font-size: 24px;
+	padding-right: 0.2vw;
+	color: rgba(255, 245, 245, 0.8);
 }
 
-.yrphud .line2 div{
-	margin: 5px 10px 5px 10px;
-	text-align: center;
-	line-height: 100%;
-	font-size: 0.83em;
-	text-shadow: 1px 1px 5px #707070;
+span {
+	position: relative;
+	top: -0.15vw;
+	color: #FFAB00;
 }
 
-.line2 div span{
-	display: block;
+.test {
+	background: rgba(0, 0, 0, 0.9);
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 0.5rem outset rgb(224, 135, 18,.8);
 }
 
-.yrphud .lajna3{
-	width: 100%;
-	position: absolute;
-	bottom: 10px;
-	display: flex;
-	justify-content: center;
-	color: rgba(224, 135, 18);
+.healthContainer>p {
+	line-height: 45%;
 }
 
-.yrphud .lajna3 div{
-	margin: 5px 10px 5px 10px;
-	text-align: center;
-	line-height: 100%;
-	font-size: 0.83em;
-	text-shadow: 1px 1px 5px #707070;
+.smallerIcon {
+	padding-left: 0.2vw;
 }
-
-.lajna3 div span{
-	display: block;
-}
-

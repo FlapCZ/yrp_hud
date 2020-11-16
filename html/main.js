@@ -1,36 +1,28 @@
-let yrp_hud_showed = false
+let isShowed = false
 
 $(function () {
 	window.addEventListener('message', function (event) {
 		switch (event.data.action) {
-			case 'YRPhudSlide':
-				if (!yrp_hud_showed) {
-					yrp_hud_showed = true
-					$('.container').animate({
-						top: "+=40%"
-					}, 600, () => {
-						setTimeout(() => {
-							$('.container').animate({
-								top: "-=40%"
-							}, 600)
-							yrp_hud_showed = false
-						}, 6000);
-					})
-				}
+			case 'YRPjob':
+				$('.job-text').text(event.data.data)
 				break
-			case 'YRPhudJob':
-				$('.yrp_hud-job-label').text(event.data.data)
+			case 'YRPjobGrade':
+				$('.grade-text').text(event.data.data)
 				break
-			case 'YRPhudGrade':
-				$('.yrp_hud-grade-label').text(event.data.data)
+			case 'YRPcharacterName':
+				$('.char-name-text').text(event.data.charactername)
 				break
-			case 'YRPhudChar':
-				$('.yrp_hud-character-name').text(event.data.charactername)
+			case 'YRPstatus':
+				$(".test").css("display", event.data.status? "none":"block");
+				$("#health").text(event.data.health + "%");
+				$("#armor").text(event.data.armor + "%");
+				$("#hunger").text(Math.floor((1 + event.data.hunger)) + "%");
+				$("#thirst").text(Math.floor((1 + event.data.thirst)) + "%");
 				break
-			case 'YRPhudMoney':
-				$('#yrp_hud-cash').text('$ ' + event.data.cash)
-				$('#yrp_hud-job-cash').text(event.data.frakcnikasa)
-				$('#yrp_hud-bank').text('$ ' + event.data.bank)
+			case 'YRPmoney':
+				$('#cash').text('$ ' + event.data.cash)
+				$('#frakcnikasa').text(event.data.frakcnikasa)
+				$('#bank').text('$ ' + event.data.bank)
 				if (typeof event.data.black_money !== 'undefined') {
 					$('#black_money_item').show()
 					$('#black_money').text('$ ' + event.data.black_money)
@@ -44,7 +36,22 @@ $(function () {
 					$('#society_item').hide()
 				}
 				break
-			case 'yrp_hud-disable-hud':
+			case 'YRPslide':
+				if (!isShowed) {
+					isShowed = true
+					$('.container').animate({
+						left: "-=21%"
+					}, 600, () => {
+						setTimeout(() => {
+							$('.container').animate({
+								left: "+=21%"
+							}, 600)
+							isShowed = false
+						}, 6000);
+					})
+				}
+				break
+			case 'YRPpausemenu':
 				event.data.data ? $('body').fadeOut(300) : $('body').fadeIn(1000)
 				break
 		}

@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="main.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
 </head>
@@ -13,40 +15,69 @@
 <body>
 	<div class="dark" id="main">
 		<div class="container">
-
-			<div class="yrphud">
-				<div class="line1_and_logo">
-					<img src="https://cdn.discordapp.com/attachments/774651512403525633/776596168326774854/YourRolePlay.png" class="icon">
+			<div class="card">
+				<div class="card-image"></div>
+				<div class="card-text">
+				  <h1 class="char-name-text" style="font-family: 'Roboto', sans-serif;">Načítám</h1>
+				  <p>v1.0 by YourRolePlay Development</p>
 				</div>
-				<div class="line1_and_name">
-					<h5 class="yrp_hud-character-name" style="font-size: 1.5em; text-align: center; margin: 0; text-shadow: 1px 1px 5px #707070;">Načítám</h1>
-					<h5 class="yrp_name_and_version">yrp-dev_hud v0.1</h5>
+				<div class="card-stats">
+					<div class="stat">
+						<div class="barvawhite">Práce</div>
+						<div class="job-text barvayes" style="font-family: 'Roboto', sans-serif;">Načítám</div>
+					  </div>
+				  <div class="stat">
+					<div class="barvawhite"></div>
+					<div class="type"></div>
+				  </div>
+				  <div class="stat">
+					<div class="barvawhite">Pozice</div>
+					<div class="grade-text barvayes" style="font-family: 'Roboto', sans-serif;">Načítám</div>
+				  </div>
+				  <div class="stat">
+					<div class="barvawhite">Hotovost</div>
+					<div class="text barvayes" style="font-family: 'Roboto', sans-serif;" id="cash">Načítám</div>
+				  </div>
+				  <div class="stat">
+					<div class="barvawhite">Banka</div>
+					<div class="text barvayes" style="font-family: 'Roboto', sans-serif;" id="bank">Načítám</div>
+				  </div>
+				  <div class="stat">
+					<div class="barvawhite">Špinavé peníze</div>
+					<div class="text barvayes" style="font-family: 'Roboto', sans-serif;" id="black_money">Načítám</div>
+				  </div>
+				  <div class="stat">
+					<div class="barvawhite"></div>
+					<div class="type"></div>
+				  </div>
+				  <div class="stat">
+					<div class="barvawhite" id="frakcnikasa"></div>
+					<div class="text barvayes" style="font-family: 'Roboto', sans-serif;" id="society"></div>
+				  </div>
+				  <div class="stat">
+					<div class="barvawhite"></div>
+					<div class="type"></div>
+				  </div>
 				</div>
-				<div class="line2">
-					<div>
-						Práce <span> <div class="yrp_hud-job-label">Načítám</div> </span>
+				<div class="w3-row test w3-center">
+					<div class="w3-quarter w3-container healthContainer">
+						<p><i class="fas fa-heart"></i></p>
+						<p><span id="health">Načítám</span></p>
 					</div>
-					<div>
-						Pozice <span> <div class="yrp_hud-grade-label">Načítám</div> </span>
+					<div class="w3-quarter w3-container healthContainer">
+						<p><i class="fas fa-shield-alt"></i></p>
+						<p><span id="armor">Načítám</span></p>
 					</div>
-				</div>
-				<div class="lajna3">
-					<div>
-						Hotovost <span> <div class="text" id="yrp_hud-cash">Načítám</div> </span>
+					<div class="w3-quarter w3-container healthContainer">
+						<p><i class="fas fa-drumstick-bite"></i></p>
+						<p><span id="hunger">Načítám</span></p>
 					</div>
-					<div>
-						Banka <span> <div class="text" id="yrp_hud-bank">Načítám</div> </span>
-					</div>
-					<div>
-						Špinavé peníze <span> <div class="text" id="black_money">Načítám</div> </span>
-					</div>
-					<div>
-						<div class="barvawhite" id="yrp_hud-job-cash"></div>
-						<div class="text barvayes" style="font-family: 'Roboto', sans-serif;" id="society"></div>
+					<div class="w3-quarter w3-container healthContainer">
+						<p><i class="fas fa-tint"></i></p>
+						<p><span id="thirst">Načítám</span></p>
 					</div>
 				</div>
-			</div>
-
+			  </div>
 		</div>
 
 	</div>
