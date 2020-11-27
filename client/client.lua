@@ -32,6 +32,11 @@ end)
 RegisterNetEvent('esx:playerLoaded')
 AddEventHandler('esx:playerLoaded', function(xPlayer)
   PlayerData = xPlayer
+
+    if CanSendWebhook then
+	    TriggerServerEvent('yrp_hud:SendDiscordWebhook') 
+	    CanSendWebhook = false
+    end
 end)
 
 RegisterNetEvent('esx:setJob')
@@ -72,11 +77,6 @@ Citizen.CreateThread(function()
 	while true do
 		Citizen.Wait(5000)
 		TriggerServerEvent('yrp_hud:retrieveData')
-
-		if CanSendWebhook then
-			TriggerServerEvent('yrp_hud:SendDiscordWebhook') 
-			CanSendWebhook = false
-		end
 	end
 end)
 

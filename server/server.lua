@@ -51,6 +51,7 @@ AddEventHandler('yrp_hud:retrieveData', function()
 	local xPlayer = ESX.GetPlayerFromId(source)
 
 	if xPlayer ~= nil then
+		local xPlayer = ESX.GetPlayerFromId(source)
 		local money,bank,black_money = table.unpack(getAccounts({'money', 'bank', 'black_money'}, xPlayer))
 		local charactername = xPlayer.getName()
 		local society = nil
